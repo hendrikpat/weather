@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateForecasts() {
         const now = new Date();
-        now.setMinutes(0, 0, 0); // Round down to the nearest hour
-        const endDate = new Date(now.getTime() + 24 * 60 * 60 * 1000); // 24 hours from now
+        now.setMinutes(0, 0, 0);
+        const endDate = new Date(now.getTime() + 24 * 60 * 60 * 1000);
         let todayForecast = "";
         let futureForecast = "";
         let dailyData = {};
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
         
         if (!symbols[symbol]) {
-            console.warn("Unknown symbol:", symbol);  // Debugging
+            console.warn("Unknown symbol:", symbol);
             return "❓ Tundmatu ilm";
         }
         return symbols[symbol];
