@@ -7,12 +7,25 @@ body {
 }
 
 .container {
-    max-width: 640px;
+    max-width: 1360px; /* Increase the width of the container */
     margin: auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* Ensure the headline is above the forecast sections */
+}
+
+.forecast-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Add margin to separate from the headline */
+}
+
+.left, .right {
+    width: 48%;
 }
 
 h1 {

@@ -10,23 +10,30 @@
     <div class="container">
         <h1>Ilmaennustus Tallinnale</h1>
         
-        <div id="today-forecast" class="forecast-section">
-            <h2>Järgmised 24h</h2>
-            <div id="today"></div>
+        <div class="forecast-sections">
+            <div class="left">
+                <div id="today-forecast" class="forecast-section">
+                    <h2>Järgmised 24h</h2>
+                    <div id="today"></div>
+                </div>
+            </div>
+            
+            <div class="right">
+                <div id="future-forecast" class="forecast-section">
+                    <h2>Järgmised 7 päeva</h2>
+                    <div id="future"></div>
+                </div>
+        
+                <div id="detailed-forecast" class="forecast-section hidden">
+                    <h2 id="detailed-title"></h2>
+                    <button id="prev-day">⟵ Eelmine päev</button>
+                    <button id="next-day">Järgmine päev ⟶</button>
+                    <div id="detailed"></div>
+                    <button id="close-detail">Sulge</button>
+                </div>
+            </div>
         </div>
-
-        <div id="future-forecast" class="forecast-section">
-            <h2>Järgmised 7 päeva</h2>
-            <div id="future"></div>
-        </div>
-
-        <div id="detailed-forecast" class="forecast-section hidden">
-            <h2 id="detailed-title"></h2>
-            <button id="prev-day">⟵ Eelmine päev</button>
-            <button id="next-day">Järgmine päev ⟶</button>
-            <div id="detailed"></div>
-            <button id="close-detail">Sulge</button>
-        </div>
+        
     </div>
 
     <script src="script.js"></script>
