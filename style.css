@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 1360px; /* Increase the width of the container */
+    max-width: 1360px;
     margin: auto;
     background: white;
     padding: 20px;
@@ -15,13 +15,13 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    flex-direction: column; /* Ensure the headline is above the forecast sections */
+    flex-direction: column;
 }
 
 .forecast-sections {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; /* Add margin to separate from the headline */
+    margin-top: 20px;
 }
 
 .left, .right {
@@ -82,12 +82,11 @@ button:hover {
     justify-content: center;
 }
 
-/* Adjustments for spacing between temperature and day in future forecast */
 .forecast-item .forecast-temp {
-    margin-left: 20px;  /* Adds more space between day and temperature */
+    margin-left: 20px;
 }
 
-/* Prevent wind info from overflowing */
+
 .forecast-item .forecast-wind {
     overflow: hidden;
     text-overflow: ellipsis;
